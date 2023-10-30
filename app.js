@@ -36,6 +36,7 @@ app.get("/api/projects", (req, res, next) => {
 
 app.get("/api/articles", (req, res, next) => {
   res.sendFile(__dirname + "/data/articles.json");
+  //   res.json(articles);
 });
 
 app.get("*", (req, res, next) => {
